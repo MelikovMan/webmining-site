@@ -15,3 +15,4 @@ export default async function sitemap() {
 
   return [...routes, ...blogs]
 }
+export const dynamic = "force-static"

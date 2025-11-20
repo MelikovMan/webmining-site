@@ -13,7 +13,7 @@ export async function GET(request: Request) {
           </h2>
           <div tw="flex flex-row border-gray-500 border-u-4 pu-24 md:flex-col md:border-l-4 md:pl-24 h-full">
             <h3 tw="flex flex-col text-3xl font-bold tracking-tight text-left">
-              Номер телефона: 89648987475
+              Github: MelikovMan
             </h3>
             <h3 tw="flex flex-col text-3xl font-bold tracking-tight text-left">
               Telegram: @MeliiRoman
