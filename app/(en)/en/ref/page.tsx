@@ -1,5 +1,6 @@
 import ExportedImage from "next-image-export-optimizer"
 import { Metadata } from "next/types"
+import { baseUri } from "app/(ru)/sitemap"
 
 export const metadata: Metadata = {
   title: 'Autoreference',
@@ -44,11 +45,11 @@ export default async function Page() {
         <li>Media content management with Object Storage integration for scalable file handling</li>
         <li>User profile system with customizable preferences and activity tracking</li>
       </ul>
-      <ExportedImage src={'/images/ER.svg'} alt="ER diagram of database" width={800} height={1200}/>
+      <ExportedImage src={`${baseUri}/images/ER.svg`} alt="ER diagram of database" width={800} height={1200}/>
       <p className="text-center">Figure 1 - ER Database Diagram</p>
 
       <h3 id="cloud-deployment">Cloud Deployment in Yandex Cloud</h3>
-      <ExportedImage src={'/images/cloud.jpg'} alt="Cloud deployment diagram" width={800} height={600}/>
+      <ExportedImage src={`${baseUri}/images/cloud.jpg`} alt="Cloud deployment diagram" width={800} height={600}/>
       <p className="text-center">Cloud Deployment Architecture in Yandex Cloud</p>
 
       <p>The system was successfully deployed in Yandex Cloud using a comprehensive suite of cloud services that demonstrate modern DevOps practices:</p>

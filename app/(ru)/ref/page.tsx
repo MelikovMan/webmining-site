@@ -1,6 +1,6 @@
 import ExportedImage from "next-image-export-optimizer"
 import { Metadata } from "next/types"
-
+import { baseUri } from "../sitemap"
 
 
 export const metadata: Metadata = {
@@ -208,7 +208,7 @@ export default async function Page() {
     <li>Поддержка полнотекстового поиска через встроенные механизмы PostgreSQL</li>
 </ul>
 <p>ER диграмма спроектированной базы данных представлена ниже:</p>
-<ExportedImage src={'/images/ER.svg'} alt="ER диграмма базы данных" width={800} height={1200}/>
+<ExportedImage src={`${baseUri}/images/ER.svg`} alt="ER диграмма базы данных" width={800} height={1200}/>
 <p className="text-center">Рисунок 1 - ER диграмма базы данных</p>
 <p>Для получения истории версий статьи используется рекурсивный SQL-запрос с использованием Common Table Expressions (CTE). Этот подход позволяет эффективно работать с древовидными структурами данных, которые плохо поддаются моделированию в реляционных базах данных.</p>
 
@@ -240,7 +240,7 @@ export default async function Page() {
 
 <h3 id="cloud-deployment">Развертывание в облачной платформе Yandex Cloud</h3>
 
-<ExportedImage src={'/images/cloud.jpg'} alt="Диграмма развертывния в облаке" width={800} height={600}/>
+<ExportedImage src={`${baseUri}/images/cloud.jpg`} alt="Диграмма развертывния в облаке" width={800} height={600}/>
 <p className="text-center">Развертывание в облачной платформе Yandex Cloud</p>
 
 <p>В рамках дополнительной разработки было выполнено развертывание системы в облачной платформе Yandex Cloud, что позволило продемонстрировать практическое применение облачных технологий для размещения вики-сервиса. Были использованы следующие сервисы Yandex Cloud:</p>

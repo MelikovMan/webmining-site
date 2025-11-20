@@ -2,6 +2,8 @@ import { getBlogPosts } from 'app/(ru)/blog/utils'
 
 export const baseUrl = 'https://melikovman.github.io/webmining-site'
 
+export const baseUri = '/webmining-site'
+
 export default async function sitemap() {
   let blogs = (await getBlogPosts()).map((post) => ({
     url: `${baseUrl}/blog/${post.slug}`,

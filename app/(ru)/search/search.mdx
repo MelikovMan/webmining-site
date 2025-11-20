@@ -1,4 +1,5 @@
 import ExportedImage from "next-image-export-optimizer";
+import {baseUri} from "../sitemap";
 
 # Поиск по магистерской диссертации
 
@@ -8,11 +9,11 @@ import ExportedImage from "next-image-export-optimizer";
 
 Следует отметить, что Yandex и DuckDuckGo не дают точное количество документов, возвращенных во время поиска. Вместо них используются приближенные значения.
 
-<ExportedImage src={'/images/compare-table.PNG'} alt="Таблица сравнения" width={942} height={663}/>
+<ExportedImage src={`${baseUri}/images/compare-table.PNG`} alt="Таблица сравнения" width={942} height={663}/>
 
 Ниже приведен нормированный график сравнения результатов, представленный как в целом виде, как и в процентном отношении от суммы запросов по двум датам, т.е. если оба стобца равные 50%, то количество документов не изменилось.
 
-<ExportedImage src={'/images/compare-graph.PNG'} alt="Таблица сравнения" width={942} height={663}/>
+<ExportedImage src={`${baseUri}/images/compare-graph.PNG`} alt="Таблица сравнения" width={942} height={663}/>
 
 ## Анализ результатов
 
