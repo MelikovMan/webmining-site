@@ -56,7 +56,6 @@ export default function RootLayout({
               <main className="flex-auto mt-6 flex flex-col min-w-0 px-2 md:px-0">
                 <Navbar />
                 {children}
-                <Navbar />
                 <Footer />
                 <Analytics />
                 <SpeedInsights />
