@@ -38,10 +38,6 @@ export default async function Resume() {
           <p className="block text-sm text-slate-800">English: C1</p>
         </div>
         <div className="p-4 border-b border-slate-200">
-          <p className="block text-sm font-semibold text-slate-800 mb-2">Personal Achievements</p>
-          <p className="block text-sm text-slate-800">-</p>
-        </div>
-        <div className="p-4 border-b border-slate-200">
           <p className="block text-sm font-semibold text-slate-800 mb-2">Hobbies</p>
           <p className="block text-sm text-slate-800">Games, books, music. Motorsports.</p>
         </div>

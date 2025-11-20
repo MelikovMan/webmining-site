@@ -38,10 +38,6 @@ export default async function Resume() {
           <p className="block text-sm text-slate-800">Английский: C1</p>
         </div>
         <div className="p-4 border-b border-slate-200">
-          <p className="block text-sm font-semibold text-slate-800 mb-2">Личные достижения</p>
-          <p className="block text-sm text-slate-800">-</p>
-        </div>
-        <div className="p-4 border-b border-slate-200">
           <p className="block text-sm font-semibold text-slate-800 mb-2">Увлечения</p>
           <p className="block text-sm text-slate-800">Игры, книги, музыка. Автоспорт.</p>
         </div>
@@ -61,7 +57,7 @@ export default async function Resume() {
         </div>
         <div className="p-4 border-b border-slate-200">
           <p className="block text-sm font-semibold text-slate-800 mb-2">Планы на будущее</p>
-          <p className="block text-sm text-slate-800">Хочу развиваться как frontend-разработчик в дайльнейшем.</p>
+          <p className="block text-sm text-slate-800">Хочу развиваться как frontend-разработчик в дальнейшем.</p>
         </div>
         <div className="p-4 border-b border-slate-200">
           <p className="block text-sm font-semibold text-slate-800 mb-2">Контактная информация</p>
@@ -131,14 +127,6 @@ export default async function Resume() {
             <td className="p-4 border-b border-slate-200">
               <p className="block text-sm text-slate-800">Русский: родной</p>
               <p className="block text-sm text-slate-800">Английский: C1</p>
-            </td>
-          </tr>
-          <tr className="hover:bg-slate-50">
-            <td className="p-4 border-b border-slate-200">
-              <p className="block text-sm font-semibold text-slate-800">Личные достижения</p>
-            </td>
-            <td className="p-4 border-b border-slate-200">
-              <p className="block text-sm text-slate-800">-</p>
             </td>
           </tr>
           <tr className="hover:bg-slate-50">
