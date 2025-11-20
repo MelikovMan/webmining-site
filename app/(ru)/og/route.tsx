@@ -1,8 +1,7 @@
 import { ImageResponse } from 'next/og'
 
 export async function GET(request: Request) {
-  let url = new URL(request.url)
-  let title = url.searchParams.get('title') || 'Персональный сайт Меликова Романа'
+  let title = 'Персональный сайт Меликова Романа'
 
   return new ImageResponse(
     (
