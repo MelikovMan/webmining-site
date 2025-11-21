@@ -25,7 +25,7 @@ export default function PortfolioHeader({name,faculty,specialty,thesis,eng,advis
 
 		</div>
         </div>
-        <div>
+        <div className="my-12">
           	<h3 className="text-l md:text-xl mb-2 text-slate-500">{(eng)? 'Thesis:' : "Тема выпускной работы:"}</h3>
 			<h2 className="text-2xl md:text-3xl mb-2 font-semibold text-slate-800">{thesis}</h2>
 			<h3 className="text-l md:text-xl mb-2">{(eng)? 'Scentific advisor' : "Научный руководитель"}: {advisor}</h3>  
