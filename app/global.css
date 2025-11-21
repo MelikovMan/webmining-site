@@ -58,12 +58,12 @@ html {
   cursor: pointer;
 }
 
-.toc {  padding: 20px !important; border-radius: 5px !important; margin: 20px 0 !important; }
+.toc {  padding: 5px !important; border-radius: 5px !important; margin: 10px 0 !important; }
         .toc ol { list-style-type: none !important; padding-left: 0 !important; }
         .toc li { margin-bottom: 8px !important; }
         .toc a { text-decoration: none;}
         .toc a:hover { text-decoration: underline; }
-        .toc .sub-toc { padding-left: 20px !important; padding-top: 5px !important ;}
+        .toc .sub-toc { padding-left: 10px !important; padding-top: 5px !important ;}
 
 
 .anchor:hover {
