@@ -1,3 +1,4 @@
+import { baseUri } from "app/(ru)/sitemap"
 export default async function Resume() {
   return <>
     <div className="w-full flex-wrap">
@@ -62,7 +63,7 @@ export default async function Resume() {
         <div className="p-4 border-b border-slate-200">
           <p className="block text-sm font-semibold text-slate-800 mb-2">Контактная информация</p>
           <p className="block underline">      
-            <a href="/webmining-site/contact-info" rel="nofollow">Подробная контактная информация</a>
+            <a href=" contact-info" rel="nofollow">Подробная контактная информация</a>
           </p>  
         </div>
       </div>
@@ -173,7 +174,7 @@ export default async function Resume() {
             </td>
             <td className="p-4 border-b border-slate-200">
               <p className="block underline">
-                <a href="/webmining-site/contact-info" rel="nofollow">Подробная контактная информация</a>
+                <a href={`${baseUri}/contact-info`} rel="nofollow">Подробная контактная информация</a>
               </p>
             </td>
           </tr>

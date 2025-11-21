@@ -26,11 +26,26 @@
   }
   html {
     color-scheme: dark;
+    background: rgba(40, 40, 40, 1)
   }
 }
 
+
+@media (prefers-color-scheme: dark) and (min-width: 1000px){
+    html {
+      background: linear-gradient(90deg,rgba(40, 40, 40, 1) 10%, rgba(30, 30, 30, 1) 50%, rgba(40, 40, 40, 1) 90%);
+  }
+}
+@media (min-width: 1000px) {
+  html {
+      background: linear-gradient(90deg,rgba(245, 245, 245, 1) 10%, rgba(255, 255, 255, 1) 50%, rgba(245, 245, 245, 1) 90%);
+  }
+}
+
+
 html {
   min-width: 360px;
+
 }
 
 .prose .anchor {
@@ -43,12 +58,12 @@ html {
   cursor: pointer;
 }
 
-.toc {  padding: 20px; border-radius: 5px; margin: 20px 0; }
-        .toc ul { list-style-type: none; padding-left: 0; }
-        .toc li { margin-bottom: 8px; }
-        .toc a { text-decoration: none; color: #2E4053; }
+.toc {  padding: 20px !important; border-radius: 5px !important; margin: 20px 0 !important; }
+        .toc ol { list-style-type: none !important; padding-left: 0 !important; }
+        .toc li { margin-bottom: 8px !important; }
+        .toc a { text-decoration: none;}
         .toc a:hover { text-decoration: underline; }
-        .toc .sub-toc { padding-left: 20px; }
+        .toc .sub-toc { padding-left: 20px !important; padding-top: 5px !important ;}
 
 
 .anchor:hover {
@@ -156,6 +171,8 @@ table {
 .title {
   text-wrap: balance;
 }
+
+
 .warning-block {
   background-color: #fff3cd; /* Light yellow background */
   color: #856404; /* Dark yellow text */

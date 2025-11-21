@@ -10,17 +10,34 @@ export const metadata: Metadata = {
 export default async function Page() {
   return (
     <div className="prose lg:prose-xl dark:prose-invert mx-auto p-2">
+
       <h1>MASTER'S THESIS AUTOREFERENCE</h1>
       <h1>DEVELOPMENT OF A MODERN WIKI ENCYCLOPEDIA PROJECT</h1>
-
+      <div className="toc text-md lg:text-lg">
+        <h2>Table of Contentents</h2>
+        <ol>
+          <li><a href="#introduction">Introduction</a></li>
+          <li><a href="#practical-implementation">1. Practical Implementation</a>
+              <ol className="sub-toc">
+                  <li><a href="#architecture">1.1 System Architecture</a></li>
+                 <li><a href="#technologies">1.2. Technology Stack</a></li>
+                 <li><a href="#database">1.3. Database Design</a></li>
+                 <li><a href="#cloud-deployment">1.4 Cloud Deployment in Yandex Cloud</a></li>
+              </ol>
+          </li>
+          <li><a href="#conclusion">Conclusion and Achievements</a></li>
+          <li><a href="#perspectives">Future Research Directions</a></li>
+          <li><a href="#sources">References</a></li>
+        </ol>
+      </div>
       <h2 id="introduction">Introduction</h2>
       <p>The development of the Internet has fundamentally changed approaches to creating and distributing encyclopedic knowledge. The emergence of hyperlinks enabled instant navigation between semantically related articles. However, the true revolution came with wiki projects - a special type of online encyclopedias that allow users to independently create and edit content.</p>
 
       <p>The phenomenon of wiki encyclopedias has proven its effectiveness through large-scale projects like Wikipedia. The success of this model stems from its ability to rapidly adapt to constantly growing information volumes and attract volunteers to fill knowledge gaps. However, modern platforms for creating wiki projects face several challenges: outdated codebase and insufficient compliance with modern web standards.</p>
 
-      <h2 id="practical-implementation">Practical Implementation</h2>
+      <h2 id="practical-implementation">1. Practical Implementation</h2>
 
-      <h3 id="architecture">System Architecture</h3>
+      <h3 id="architecture">1.1 System Architecture</h3>
       <p>The developed system implements a modern wiki platform with the following key features:</p>
       <ul>
         <li>Tree-like version control system (similar to Git) enabling parallel editing and branch merging</li>
@@ -31,12 +48,12 @@ export default async function Page() {
         <li>Real-time multi-user editing support with conflict resolution</li>
       </ul>
 
-      <h3 id="technologies">Technology Stack</h3>
+      <h3 id="technologies">1.2. Technology Stack</h3>
       <p><strong>Backend Architecture:</strong> Python with FastAPI framework providing asynchronous operations and automatic OpenAPI documentation. PostgreSQL database with SQLAlchemy ORM for robust data management. Redis for caching frequently accessed data and session management. JWT tokens for secure authentication and authorization.</p>
       
       <p><strong>Frontend Implementation:</strong> React with TypeScript ensuring type safety and maintainability. Mantine component library for consistent UI/UX design. TanStack Query for efficient API state management and caching. TipTap editor providing rich text editing capabilities. Vite build tool for fast development and optimized production builds.</p>
 
-      <h3 id="database">Database Design</h3>
+      <h3 id="database">1.3. Database Design</h3>
       <p>The relational database contains 16 tables implementing sophisticated data relationships:</p>
       <ul>
         <li>Tree-like version control through branches, commits, and commit_parents tables enabling Git-like history tracking</li>
@@ -48,9 +65,9 @@ export default async function Page() {
       <ExportedImage src={`${baseUri}/images/ER.svg`} alt="ER diagram of database" width={800} height={1200}/>
       <p className="text-center">Figure 1 - ER Database Diagram</p>
 
-      <h3 id="cloud-deployment">Cloud Deployment in Yandex Cloud</h3>
+      <h3 id="cloud-deployment">1.4 Cloud Deployment in Yandex Cloud</h3>
       <ExportedImage src={`${baseUri}/images/cloud.jpg`} alt="Cloud deployment diagram" width={800} height={600}/>
-      <p className="text-center">Cloud Deployment Architecture in Yandex Cloud</p>
+      <p className="text-center">Figure 2 - Cloud Deployment Architecture in Yandex Cloud</p>
 
       <p>The system was successfully deployed in Yandex Cloud using a comprehensive suite of cloud services that demonstrate modern DevOps practices:</p>
 
@@ -105,6 +122,13 @@ export default async function Page() {
       </ul>
 
       <div className="warning-block">
+        <div>
+          <span className="warn warning"></span>
+        </div>
+
+        <div>
+          <span style={{height:"30px",}}></span>
+        </div>
         <p>Master's thesis work is currently in progress with expected completion date: April 2026. The current implementation represents significant milestone achievement. Full thesis documentation and source code will be available upon completion from the student or scientific supervisor!</p>
       </div>
 
