@@ -1,10 +1,10 @@
 import Link from 'next/link'
 
 const navItems = {
-  'en/': {
+  '/en/': {
     name: 'Portfolio',
   },
-  'en/ref': {
+  '/en/ref': {
     name: 'Reference',
   },
   '/':

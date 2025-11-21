@@ -62,7 +62,7 @@ export default async function Resume() {
         <div className="p-4 border-b border-slate-200">
           <p className="block text-sm font-semibold text-slate-800 mb-2">Contact Information</p>
           <p className="block underline">
-            <a href="contact-info" rel="nofollow">Detailed contact information</a>
+            <a href="en/contact-info" rel="nofollow">Detailed contact information</a>
           </p>
         </div>
       </div>
