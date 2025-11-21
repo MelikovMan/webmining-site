@@ -25,8 +25,8 @@ export default async function Page() {
         <li><a href="#history">2. История развития вики-проектов и сравнительный анализ</a>
             <ol className="sub-toc">
                 <li><a href="#history-overview">2.1. Исторический обзор</a></li>
-                <li><a href="#compare-engines">2.2. Сравнительный анализ вики-движков</a></li>
-                <li><a href="#compare-hostings">2.3. Сравнительный анализ вики-хостингов</a></li>
+                <li><a href="#compare-engines">2.2. Сравнительние вики-движков</a></li>
+                <li><a href="#compare-hostings">2.3. Сравннение вики-хостингов</a></li>
             </ol>
         </li>
         <li><a href="#design">3. Проектирование и разработка вики-проекта</a>
@@ -35,7 +35,7 @@ export default async function Page() {
                 <li><a href="#technologies">3.2. Выбор технологий</a></li>
                 <li><a href="#database">3.3. Архитектура базы данных</a></li>
                 <li><a href="#implementation">3.4. Реализация и развертывание</a></li>
-                <li><a href="#cloud-deployment">3.5. Развертывание в облачной платформе Yandex Cloud</a></li>
+                <li><a href="#cloud-deployment">3.5. Развертывание в облачной платформе</a></li>
             </ol>
         </li>
         <li><a href="#conclusion">Заключение и выводы</a></li>
